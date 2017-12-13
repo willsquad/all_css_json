@@ -603,288 +603,493 @@ var css = {
         id: "40",
         definition: "The box-shadow property attaches one or more shadows to an element.", 
         version: "3.0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-	/* backgroundPosition: {
-		version: "1.0",
-		syntax: [
-			{
-				type: 'string',
-				values: ['left', 'right', 'center', 'top', 'bottom']
-			},
-			{
-				type: 'string',
-				values: ['left', 'right', 'center', 'top', 'bottom']
-			}
-        ]
-        syntax_new: {
-            "text": [
+        syntax: {
+            "number": [
                 {
-                    type: 'string',
-                    values: ['left', 'right', 'center']
-                },
-                {
-                    type: 'string',
-                    values: ['top', 'center', 'bottom']
+                    type: 'number',
+                    values: ['h-offset', 'v-offset', 'blur', 'spread']
                 }
             ],
-            "%": [
+            "color": [
                 {
-                    type: 'percentage',
-                    values: ['x%']
-                },
+                    type: 'color_code',
+                    values: ['#000000']
+                }
+            ],
+            "string": [
                 {
-                    type: 'percentage',
-                    values: ['y%']
+                    type: 'string',
+                    values: ['none', 'inset', 'initial', 'inherit']
                 }
             ]
-        } 
-	},*/
+        }
+    },
+    boxSizing: {
+        id: "41",
+        definition: "The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['content-box', 'border-box', 'initial', 'inherit']
+            }
+        ]
+    },
+    pageBreakAfter: {
+        id: "42",
+        definition: "The page-break-after property sets whether a page break should occur AFTER a specified element.", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'always', 'avoid', 'left', 'right', 'initial', 'inherit']
+            }
+        ]
+    },
+    pageBreakBefore: {
+        id: "43",
+        definition: "The page-break-before property sets whether a page break should occur BEFORE a specified element.", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'always', 'avoid', 'left', 'right', 'initial', 'inherit']
+            }
+        ]
+    },
+    pageBreakInside: {
+        id: "44",
+        definition: "The page-break-inside property sets whether a page break is allowed inside a specified element.", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'always', 'avoid', 'initial', 'inherit']
+            }
+        ]
+    },
+    captionSide: {
+        id: "45",
+        definition: "The caption-side property specifies the placement of a table caption.", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['top', 'bottom', 'initial', 'inherit']
+            }
+        ]
+    },
+    clear: {
+        id: "46",
+        definition: "The clear property specifies on which sides of an element floating elements are not allowed to float.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'left', 'right', 'both', 'initial', 'inherit']
+            }
+        ]
+    },
+    clip: {
+        id: "47",
+        definition: "The clip property lets you specify a rectangle to clip an absolutely positioned element. ", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'shape', 'initial', 'inherit']
+            }
+        ]
+    },
+    color: {
+        id: "48",
+        definition: "The color property specifies the color of text.", 
+        version: "1.0",
+        syntax: {
+            "color": [
+                {
+                    type: 'color_code',
+                    values: ['#000000']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    content: {
+        id: "49",
+        definition: "The content property is used with the :before and :after pseudo-elements, to insert generated content.", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['normal', 'none', 'counter', 'attr(attribute)', 'string', 'open-quote', 'close-quote', 'no-open-quote', 'no-close-quote', 'url(url)', 'initial', 'inherit']
+            }
+        ]
+    },
+    cursor: {
+        id: "50",
+        definition: "The cursor property specifies the type of cursor to be displayed when pointing on an element.", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['alias', 'all-scroll', 'auto', 'cell', 'context-menu', 'col-resize', 'copy', 'crosshair', 'default', 'e-resize', 'ew-resize', 'grab', 'grabbing', 'help', 'move', 'n-resize', 'ne-resize', 'nesw-resize', 'ns-resize', 'nw-resize', 'nwse-resize', 'no-drop', 'none', 'not-allowed', 'pointer', 'progress', 'row-resize', 's-resize', 'text', 'URL', 'vertical-text', 'w-resize', 'wait', 'zoom-in', 'zoom-out', 'initial', 'inherit']
+            }
+        ]
+    },
+    direction: {
+        id: "51",
+        definition: "The direction property specifies the text direction/writing direction.", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['ltr', 'rtl', 'initial', 'inherit']
+            }
+        ]
+    },
+    display: {
+        id: "52",
+        definition: "The display property specifies the type of box used for an HTML element.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['inline', 'block', 'flex', 'inline-block', 'inline-flex', 'inline-table', 'list-item', 'run-in', 'table', 'table-caption', 'table-column-group', 'table-header-group', 'table-footer-group', 'table-row-group', 'table-cell', 'table-column', 'table-row', 'none', 'initial', 'inherit' ]
+            }
+        ]
+    },
+    emptyCells: {
+        id: "53",
+        definition: "The empty-cells property sets whether or not to display borders and background on empty cells in a table (only for the 'separated borders' model).", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['show', 'hide', 'initial', 'inherit']
+            }
+        ]
+    },
+    float: {
+        id: "54",
+        definition: "The float property specifies whether or not a box (an element) should float.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'left', 'right', 'initial', 'inherit']
+            }
+        ]
+    },
+    fontFamily: {
+        id: "55",
+        definition: "The font-family property specifies the font for an element.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['family-name', 'generic-family', 'initial', 'inherit']
+            }
+        ]
+    },
+    fontKerning: {
+        id: "56",
+        definition: "The font-kerning property controls the usage of the kerning information stored in a font.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'normal', 'none']
+            }
+        ]
+    },
+    fontSize: {
+        id: "57",
+        definition: "The font-size property sets the size of a font.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['medium', 'xx-small', 'x-small', 'small', 'large', 'x-large', 'xx-large', 'smaller', 'larger','initial', 'inherit']
+                }
+            ]
+        }
+    },
+    fontStretch: {
+        id: "58",
+        definition: "The font-stretch property allows you to make text wider or narrower.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['ultra-condensed', 'extra-condensed', 'condensed', 'semi-condensed', 'normal', 'semi-expanded', 'expanded', 'extra-expanded', 'ultra-expanded', 'initial', 'inherit']
+            }
+        ]
+    },
+    fontStyle: {
+        id: "59",
+        definition: "The font-style property specifies the font style for a text.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['normal', 'italic', 'oblique', 'initial', 'inherit']
+            }
+        ]
+    },
+    fontVariant: {
+        id: "60",
+        definition: "The font-variant property specifies whether or not a text should be displayed in a small-caps font.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['normal', 'small-caps', 'initial', 'inherit']
+            }
+        ]
+    },
+    fontVariantLigatures: {
+        id: "61",
+        definition: "The font-variant-ligatures CSS property controls which ligatures and contextual forms are used in textual content of the elements it applies to.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['normal', 'none', 'common-ligatures', 'no-common-ligatures', 'discretionary-ligatures', 'no-discretionary-ligatures', 'historical-ligatures', 'no-historical-ligatures', 'contextual', 'no-contextual']
+            }
+        ]
+    },
+    fontVariantCaps: {
+        id: "62",
+        definition: "The font-variant-caps property allows the selection of alternate glyphs used for small or petite capitals or for titling.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['normal', 'small-caps', 'all-small-caps', 'petite-caps', 'all-petite-caps', 'unicase', 'titling-caps']
+            }
+        ]
+    },
+    fontVariantNumeric: {
+        id: "63",
+        definition: "The font-variant-numeric property specifies control over numerical forms.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['numeric-figure-values', 'numeric-spacing-values', 'numeric-fraction-values']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['normal', 'ordinal', 'slashed-zero']
+                }
+            ]
+        }
+    },
+    fontWeight: {
+        id: "64",
+        definition: "The font-weight property sets how thick or thin characters in text should be displayed.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['100->900']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['normal', 'bold', 'bolder', 'lighter', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    height: {
+        id: "65",
+        definition: "The height property sets the height of an element.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length in px, cm, etc', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    imageRendering: {
+        id: "66",
+        definition: "The image-rendering CSS property provides a hint to the browser about the algorithm it should use to scale images.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'crisp-edges', 'pixelated', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    isolation: {
+        id: "67",
+        definition: "The isolation CSS property defines if the element must create a new stacking context.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'isolate', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    justifyItems: {
+        id: "68",
+        definition: "The CSS justify-items property defines the default justify-self for all items of the box, given them the default way of justifying each box along the appropriate axis.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'normal', 'stretch', 'center', 'start', 'end', 'flex-start', 'flex-end', 'self-start', 'self-end', 'left', 'right', 'baseline', 'first baseline', 'last baseline', 'safe center', 'unsafe center', 'legacy right', 'legacy left', 'legacy center', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    justifySelf: {
+        id: "69",
+        definition: "The CSS justify-self property defines the way of justifying a box inside its container along the appropriate axis.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'normal', 'stretch', 'center', 'start', 'end', 'flex-start', 'flex-end', 'self-start', 'self-end', 'left', 'right', 'baseline', 'first baseline', 'last baseline', 'safe center', 'unsafe center', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    left: {
+        id: "70",
+        definition: "The left property sets the left edge of an element to a unit to the left/right of the left edge", 
+        version: "2.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    letterSpacing: {
+        id: "71",
+        definition: "The letter-spacing property increases or decreases the space between characters in a text.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['normal', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    lineHeight: {
+        id: "72",
+        definition: "The line-height property specifies the line height.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['number', 'length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['normal', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    listStyleImage: {
+        id: "73",
+        definition: "The list-style-image property replaces the list-item marker with an image.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'url', 'initial', 'inherit']
+            }
+        ]
+    },
+    listStylePosition: {
+        id: "74",
+        definition: "The list-style-position property specifies if the list-item markers should appear inside or outside the content flow.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['inside', 'outside', 'initial', 'inherit']
+            }
+        ]
+    },
+    listStyleType: {
+        id: "75",
+        definition: "The list-style-type specifies the type of list-item marker in a list.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['disc', 'armenian', 'circle', 'cjk-ideographic', 'decimal', 'decimal-leading-zero', 'georgian', 'hebrew', 'hiragana', 'hiragana-iroha', 'katakana', 'katakana-iroha', 'lower-alpha', 'lower-greek', 'lower-latin', 'lower-roman', 'none', 'square', 'upper-alpha', 'upper-latin', 'upper-roman', 'initial', 'inherit']
+            }
+        ]
+    },
+    marginBottom: {
+        id: "76",
+        definition: "The margin-bottom property sets the bottom margin of an element.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    }
 };
