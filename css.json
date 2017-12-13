@@ -1,0 +1,850 @@
+var css = {
+	animationDelay: {
+        id: "0",
+        definition: "The animation-delay property specifies a delay for the start of an animation",
+        version: "3.0",
+		syntax: {
+            "time": [
+                {
+                    type: 'time_in_seconds',
+                    values: ['0s']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    animationDirection: {
+        id: "1",
+        definition: "The animation-direction property defines whether an animation should be played forwards, backwards or in alternate cycles.",
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['normal', 'reverse', 'alternate', 'alternate-reverse', 'initial', 'inherit']
+            }
+        ]
+    },
+    animationDuration: {
+        id: "2",
+        definition: "The animation-duration property defines how long an animation should take to complete one cycle",
+        version: "3.0",
+        syntax: {
+            "time": [
+                {
+                    type: 'time_in_seconds',
+                    values: ['0s']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    animationFillMode: {
+        id: "3",
+        definition: "The animation-fill-mode property specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)",
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'forwards', 'backwards', 'both', 'initial', 'inherit']
+            }
+        ]
+    },
+    animationIterationCount: {
+        id: "4",
+        definition: "The animation-iteration-id property specifies the number of times an animation should be played",
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: [1]
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['infinite', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    animationName: {
+        id: "5",
+        definition: "The animation-name property specifies a name for the @keyframes animation.",
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['keyframename', 'none', 'initial', 'inherit']
+            }
+        ]
+    },
+    animationPlayState: {
+        id: "6",
+        definition: "The animation-play-state property specifies whether the animation is running or paused.",
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['paused', 'running', 'initial', 'inherit']
+            }
+        ]
+    },
+    animationTimingFunction: {
+        id: "7",
+        definition: "The animation-timing-function specifies the speed curve of an animation.",
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['linear', 'ease', 'ease-in', 'ease-out', 'ease-in-out', 'step-start', 'step-end', 'steps(int,start, end)', 'cubic-bezier(n,n,n,n)', 'initial', 'inherit']
+            }
+        ]
+    },
+    backgroundAttachment: {
+        id: "8",
+        definition: "The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.",
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['scroll', 'fixed', 'local', 'initial', 'inherit']
+            }
+        ]
+    },
+    backgroundBlendMode: {
+        id: "9",
+        definition: "The background-blend-mode property defines the blending mode of each background layer (color and/or image).",
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['normal', 'multiply', 'screen', 'overlay', 'darken', 'lighten', 'color-dodge', 'saturation', 'color', 'luminosity']
+            }
+        ]
+    },
+    backgroundClip: {
+        id: "10",
+        definition: "The background-clip property defines how far the background (color or image) should extend within an element.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['border-box', 'padding-box', 'content-box', 'initial', 'inherit']
+            }
+        ]
+    },
+    backgroundColor: {
+        id: "11",
+        definition: "The background-color property sets the background color of an element.", 
+        version: "1.0",
+        syntax: {
+            "color_code": [
+                {
+                    type: 'color_code',
+                    values: ['#FFFFFF']
+                }
+            ],
+            "string": [
+                {
+                    type : 'string',
+                    values: ['transparent', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    backgroundImage: {
+        id: "12",
+        definition: "The background-image property sets one or more background images for an element.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['url', 'none', 'initial', 'inherit']
+            }
+        ]
+    },
+    backgroundOrigin: {
+        id: "13",
+        definition: "The background-origin property specifies the origin position (the background positioning area) of a background image.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['padding-box', 'border-box', 'content-box', 'initial', 'inherit']
+            }
+        ]
+    },
+    backgroundPosition: {
+        id: "14",
+        definition: "The background-position property sets the starting position of a background image.", 
+        version: "1.0",
+        syntax: {
+            "text": [
+                {
+                    type: 'string',
+                    values: ['left', 'right', 'center']
+                },
+                {
+                    type: 'string',
+                    values: ['top', 'center', 'bottom']
+                }
+            ],
+            "%": [
+                {
+                    type: 'percentage',
+                    values: ['x%']
+                },
+                {
+                    type: 'percentage',
+                    values: ['y%']
+                }
+            ],
+            "px": [
+                {
+                    type: 'number',
+                    values: ['0px']
+                },
+                {
+                    type: 'number',
+                    values: ['0px']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial, inherit']
+                }
+            ]
+        } 
+    },
+    backgroundRepeat: {
+        id: "15",
+        definition: "The background-repeat property sets if/how a background image will be repeated.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['repeat', 'repeat-x', 'repeat-y', 'no-repeat', 'initial', 'inherit']
+            }
+        ]
+    },
+    backgroundSize: {
+        id: "16",
+        definition: "The background-size property specifies the size of the background images.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'length', 'percentage', 'cover', 'contain', 'initial', 'inherit']
+            }
+        ]
+    },
+    borderBottomColor: {
+        id: "17",
+        definition: "The border-bottom-color property sets the color of an element's bottom border",
+        version: "1.0",
+        syntax: {
+            "color_code": [
+                {
+                    type: 'color_code',
+                    values: ['#FFFFFF']
+                }
+            ],
+            "string": [
+                {
+                    type : 'string',
+                    values: ['transparent', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    borderBottomLeftRadius: {
+        id: "18",
+        definition: "The border-bottom-left-radius property defines the radius of the bottom-left corner.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    borderBottomRightRadius: {
+        id: "19",
+        definition: "The border-bottom-right-radius property defines the radius of the bottom-right corner.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    borderBottomStyle: {
+        id: "20",
+        definition: "The border-bottom-style property sets the style of an element's bottom border.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'hidden', 'dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset', 'initial', 'inherit']
+            }
+        ]
+    },
+    borderBottomWidth: {
+        id: "21",
+        definition: "The border-bottom-width property sets the width of an element's bottom border.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['medium', 'thin', 'thick', 'length', 'initial', 'inherit']
+            }
+        ]
+    },
+    borderCollapse: {
+        id: "22",
+        definition: "The border-collapse property sets whether table borders should collapse into a single border or be separated as in standard HTML.", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['separate', 'collapse', 'initial', 'inherit']
+            }
+        ]
+    },
+    borderImageOutset: {
+        id: "23",
+        definition: "The border-image-outset property specifies the amount by which the border image area extends beyond the border box.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', 'number']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    borderImageRepeat: {
+        id: "24",
+        definition: "The border-image-repeat property specifies whether the border image should be repeated, rounded or stretched.", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['stretch', 'repeat', 'round', 'initial', 'inherit']
+            }
+        ]
+    },
+    borderImageSlice: {
+        id: "25",
+        definition: "The border-image-slice property specifies how to slice the image specified by border-image-source. The image is always sliced into nine sections: four corners, four edges and the middle.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['number', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['fill', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    borderImageSource: {
+        id: "26",
+        definition: "The border-image-source property specifies the path to the image to be used as a border (instead of the normal border around an element).", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'image', 'initial', 'inherit']
+            }
+        ]
+    },
+    borderImageWidth: {
+        id: "27",
+        definition: "The border-image-width property specifies the width of the border image.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', 'number', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    borderLeftColor: {
+        id: "28",
+        definition: "The border-left-color property sets the color of an element's left border.", 
+        version: "1.0",
+        syntax: {
+            "color_code": [
+                {
+                    type: 'color_code',
+                    values: ['#000000']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['transparent', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    borderLeftStyle: {
+        id: "29",
+        definition: "The border-left-style property sets the style of an element's left border.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'hidden', 'dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset', 'initial', 'inherit']
+            }
+        ]
+    },
+    borderLeftWidth: {
+        id: "30",
+        definition: "The border-left-width property sets the width of an element's left border.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['medium', 'thin', 'thick', 'length', 'initial', 'inherit']
+            }
+        ]
+    },
+    borderRightColor: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+	/* backgroundPosition: {
+		version: "1.0",
+		syntax: [
+			{
+				type: 'string',
+				values: ['left', 'right', 'center', 'top', 'bottom']
+			},
+			{
+				type: 'string',
+				values: ['left', 'right', 'center', 'top', 'bottom']
+			}
+        ]
+        syntax_new: {
+            "text": [
+                {
+                    type: 'string',
+                    values: ['left', 'right', 'center']
+                },
+                {
+                    type: 'string',
+                    values: ['top', 'center', 'bottom']
+                }
+            ],
+            "%": [
+                {
+                    type: 'percentage',
+                    values: ['x%']
+                },
+                {
+                    type: 'percentage',
+                    values: ['y%']
+                }
+            ]
+        } 
+	},*/
+};
