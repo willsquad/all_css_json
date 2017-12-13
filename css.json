@@ -461,108 +461,148 @@ var css = {
         ]
     },
     borderRightColor: {
-        id: "",
-        definition: "", 
-        version: ".0",
+        id: "31",
+        definition: "The border-right-color property sets the color of an element's right border.", 
+        version: "1.0",
+        syntax: {
+            "color_code": [
+                {
+                    type: 'color_code',
+                    values: ['#000000']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['transparent', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    borderRightStyle: {
+        id: "32",
+        definition: "The border-right-style property sets the style of an element's right border.", 
+        version: "1.0",
         syntax: [
             {
                 type: 'string',
-                values: []
+                values: ['none', 'hidden', 'dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset', 'initial', 'inherit']
             }
         ]
     },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
+    borderRightWidth: {
+        id: "33",
+        definition: "The border-right-width property sets the width of an element's right border.", 
+        version: "1.0",
         syntax: [
             {
                 type: 'string',
-                values: []
+                values: ['medium', 'thin', 'thick', 'length', 'initial', 'inherit']
             }
         ]
     },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
+    borderTopColor: {
+        id: "34",
+        definition: "The border-top-color property sets the color of an element's top border.", 
+        version: "1.0",
+        syntax: {
+            "color_code": [
+                {
+                    type: 'color_code',
+                    values: ['#000000']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['transparent', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    borderTopLeftRadius: {
+        id: "35",
+        definition: "The border-top-left-radius property defines the radius of the top-left corner.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['lenght', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    borderTopRightRadius: {
+        id: "36",
+        definition: "The border-top-right-radius property defines the radius of the top-right corner.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['lenght', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    borderTopStyle: {
+        id: "37",
+        definition: "The border-top-style property sets the style of an element's top border.", 
+        version: "1.0",
         syntax: [
             {
                 type: 'string',
-                values: []
+                values: ['none', 'hidden', 'dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset', 'initial', 'inherit']
             }
         ]
     },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
+    borderTopWidth: {
+        id: "38",
+        definition: "The border-top-width property sets the width of an element's top border.", 
+        version: "1.0",
         syntax: [
             {
                 type: 'string',
-                values: []
+                values: ['medium', 'thin', 'thick', 'length', 'initial', 'inherit']
             }
         ]
     },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
+    bottom: {
+        id: "39",
+        definition: "The bottom property specifies the vertical position of a positioned element. This property has no effect on non-positioned elements.", 
+        version: "2.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['lenght', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
     },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
+    boxShadow: {
+        id: "40",
+        definition: "The box-shadow property attaches one or more shadows to an element.", 
+        version: "3.0",
         syntax: [
             {
                 type: 'string',
