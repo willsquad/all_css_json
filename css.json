@@ -1091,5 +1091,1114 @@ var css = {
                 }
             ]
         }
+    },
+    marginLeft: {
+        id: "77",
+        definition: "The margin-left property sets the left margin of an element.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    marginRight: {
+        id: "78",
+        definition: "The margin-right property sets the right margin of an element.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    marginTop: {
+        id: "79",
+        definition: "The margin-top property sets the top margin of an element.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    maxHeight: {
+        id: "80",
+        definition: "The max-height property is used to set the maximum height of an element.", 
+        version: "2.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    maxWidth: {
+        id: "81",
+        definition: "The max-width property is used to set the maximum width of an element.", 
+        version: "2.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    minHeight: {
+        id: "82",
+        definition: "The min-height property is used to set the minimum height of an element.", 
+        version: "2.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    minWidth: {
+        id: "83",
+        definition: "The min-width property is used to set the minimum width of an element.", 
+        version: "2.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    mixBlendMode: {
+        id: "84",
+        definition: "The mix-blend-mode CSS property describes how an element's content should blend with the content of the element's direct parent and the element's background.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['normal', 'multiply', 'screen', 'overlay', 'darken', 'lighten', 'color-dodge', 'color-burn', 'hard-light', 'soft-light', 'difference', 'exclusion', 'hue', 'saturation', 'color', 'luminosity', 'initial', 'inherit', 'unset']
+            }
+        ]
+    },
+    objectFit: {
+        id: "85",
+        definition: "The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['fill', 'contain', 'cover', 'none', 'scale-down', 'initial', 'inherit']
+            }
+        ]
+    },
+    objectPosition: {
+        id: "86",
+        definition: "The object-position property determines the alignment of the replaced element inside its box.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'number',
+                values: ['50% 50%']
+            }
+        ]
+    },
+    offsetDistance: {
+        id: "87",
+        definition: "The offset-distance CSS property specifies a position along an offset-path.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'number',
+                values: ['length', '%']
+            }
+        ]
+    },
+    offsetPath: { /**** SYNTAX ISSUE. MARKED FOR REVIEW ****/
+        id: "88",
+        definition: "The offset-path CSS property specifies the offset path where the element gets positioned.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    offsetRotate: {
+        id: "89",
+        definition: "The offset-rotate CSS property defines the direction of the element while positioning along the offset path.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['angle']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'reverse']
+                }
+            ]
+        }
+    },
+    opacity: {
+        id: "90",
+        definition: "The opacity property sets the opacity level for an element.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['0.0 -> 1.0']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    orphans: {
+        id: "91",
+        definition: "The orphans CSS property specifies the minimum number of lines in a block container that must be shown at the bottom of a page, region, or column. This property is normally used to control how breaks occur.", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'number',
+                values: ['integer']
+            }
+        ]
+    },
+    outlineColor: {
+        id: "92",
+        definition: "An outline is a line that is drawn around elements (outside the borders) to make the element stand out.", 
+        version: "2.0",
+        syntax: {
+            "color": [
+                {
+                    type: 'color_code',
+                    values: ['#000000']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['invert', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    outlineOffset: {
+        id: "93",
+        definition: "The outline-offset property adds space between an outline and the edge or border of an element.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['0']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    outlineStyle: {
+        id: "94",
+        definition: "An outline is a line that is drawn around elements (outside the borders) to make the element stand out.", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'hidden', 'dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset', 'initial', 'inherit']
+            }
+        ]
+    },
+    outlineWidth: {
+        id: "95",
+        definition: "The outline-width specifies the width of an outline.", 
+        version: "2.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['medium', 'thin', 'thick', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    overflowAnchor: {
+        id: "96",
+        definition: "The overflow-anchor property enables us to opt out of Scroll Anchoring, which is a browser feature intended to allow content to load above the user's current DOM location without changing the user's location once that content has been fully loaded.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'none']
+            }
+        ]
+    },
+    overflowWrap: {
+        id: "97",
+        definition: "The overflow-wrap CSS property specifies whether or not the browser should insert line breaks within words to prevent text from overflowing its content box.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['normal', 'break-word', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    overflowX: {
+        id: "98",
+        definition: "The overflow-x property specifies what to do with the left/right edges of the content - if it overflows the element's content area.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['visible', 'hidden', 'scroll', 'auto', 'initial', 'inherit']
+            }
+        ]
+    },
+    overflowY: {
+        id: "99",
+        definition: "The overflow-y property specifies what to do with the top/bottom edges of the content - if it overflows the element's content area.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['visible', 'hidden', 'scroll', 'auto', 'initial', 'inherit']
+            }
+        ]
+    },
+    paddingBottom: {
+        id: "100",
+        definition: "The padding-bottom property sets the bottom padding (space) of an element.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    paddingLeft: {
+        id: "101",
+        definition: "The padding-left property sets the left padding (space) of an element.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    paddingRight: {
+        id: "102",
+        definition: "The padding-right property sets the right padding (space) of an element.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    paddingTop: {
+        id: "103",
+        definition: "The padding-top property sets the top padding (space) of an element.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    pointerEvents: {
+        id: "104",
+        definition: "The pointer-events CSS property specifies under what circumstances (if any) a particular graphic element can become the target of mouse events.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'none', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    position: {
+        id: "105",
+        definition: "The position property specifies the type of positioning method used for an element (static, relative, absolute or fixed).", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['static', 'absolute', 'fixed', 'relative', 'sticky', 'initial', 'inherit']
+            }
+        ]
+    },
+    resize: {
+        id: "106",
+        definition: "The resize property specifies whether or not an element is resizable by the user.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'both', 'horizontal', 'vertical', 'initial', 'inherit']
+            }
+        ]
+    },
+    right: {
+        id: "107",
+        definition: "The right property sets the right edge of an element to a unit to the left/right to its normal position.", 
+        version: "2.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    scrollBehavior: {
+        id: "108",
+        definition: "The scroll-behavior CSS property specifies the scrolling behavior for a scrolling box", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'smooth', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    speak: {
+        id: "109",
+        definition: "The speak property in CSS is for specifying how a browser should speak the content it reads, such as through a screen reader.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['inherit', 'speak', 'none', 'normal', 'spell-out']
+            }
+        ]
+    },
+    tableLayout: {
+        id: "110",
+        definition: "The table-layout property sets the table layout algorithm to be used for a table.", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'fixed', 'initial', 'inherit']
+            }
+        ]
+    },
+    tabSize: {
+        id: "111",
+        definition: "The tab-size property specifies the length of the space used for the tab character.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', 'number']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    textAlign: {
+        id: "112",
+        definition: "The text-align property specifies the horizontal alignment of text in an element.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['left', 'right', 'center', 'justify', 'initial', 'inherit']
+            }
+        ]
+    },
+    textAlignLast: {
+        id: "113",
+        definition: "The text-align-last property specifies how to align the last line of a text. The text-align-last property will only work for elements with the text-align property set to justify.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'left', 'right', 'center', 'justify', 'start', 'end', 'initial', 'inherit']
+            }
+        ]
+    },
+    textDecoration: {
+        id: "114",
+        definition: "The text-decoration property specifies the decoration added to text.", 
+        version: "1.0 | 3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'underline', 'overline', 'line-through', 'initial', 'inherit']
+            }
+        ]
+    },
+    textDecorationLine: {
+        id: "115",
+        definition: "The text-decoration-line property specifies what type of line, if any, the decoration will have.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'underline', 'overline', 'line-through', 'initial', 'inherit']
+            }
+        ]
+    },
+    textDecorationStyle: {
+        id: "116",
+        definition: "The text-decoration-style property specifies how the line, if any, will display.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['solid', 'double', 'dotted', 'dashed', 'wavy', 'initial', 'inherit                 ']
+            }
+        ]
+    },
+    textDecorationColor: {
+        id: "117",
+        definition: "The text-decoration-color property specifies the color of the text-decoration (underlines, overlines, linethroughs).", 
+        version: "3.0",
+        syntax: {
+            "color": [
+                {
+                    type: 'color_code',
+                    values: ['#000000']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    textDecorationSkip: {
+        id: "118",
+        definition: "The text-decoration-skip CSS property specifies what parts of the element’s content any text decoration affecting the element must skip over. ", 
+        version: "3.0",
+        syntax: {
+            "single keyword": [
+                {
+                    type: 'string',
+                    values: ['none', 'objects', 'edges', 'spaces', 'inherit', 'initial', 'unset']
+                }
+            ],
+            "multiple keywords": [
+                {
+                    type: 'string',
+                    values: ['spaces', 'objects', 'leading-spaces', 'trailing-spaces', 'edges', 'box-decoration']
+                },
+                {
+                    type: 'string',
+                    values: ['spaces', 'objects', 'leading-spaces', 'trailing-spaces', 'edges', 'box-decoration']
+                }
+            ]
+        }
+    },
+    textUnderlinePosition: {
+        id: "119",
+        definition: "The text-underline-position CSS property specifies the position of the underline which is set using the text-decoration property's underline value.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'under', 'left', 'right', 'initial', 'inherit', 'unset']
+            }
+        ]
+    },
+    textIndent: {
+        id: "120",
+        definition: "The text-indent property specifies the indentation of the first line in a text-block.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    textRendering: {
+        id: "121",
+        definition: "The text-rendering CSS property provides information to the rendering engine about what to optimize for when rendering text.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'optimizeSpeed', 'optimizeLegibility', 'geometricPrecision', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    textShadow: {
+        id: "122",
+        definition: "The text-shadow property adds shadow to text.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['h-shadow', 'v-shadow', 'blur-shadow']
+                }
+            ],
+            "color": [
+                {
+                    type: 'color_code',
+                    values: ['#000000']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    textSizeAdjust: {
+        id: "123",
+        definition: "The text-size-adjust property allows control over the text inflation algorithm used on some mobile devices. ", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'auto', 'initial', 'inherit', 'unset']
+                }
+            ]
+        }
+    },
+    textOverflow: {
+        id: "124",
+        definition: "The text-overflow property specifies how overflowed content that is not displayed should be signaled to the user.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['clip', 'ellipsis', 'string', 'initial', 'inherit']
+            }
+        ]
+    },
+    textTransform: {
+        id: "125",
+        definition: "The text-transform property controls the capitalization of text.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'capitalize', 'uppercase', 'lowercase', 'initial', 'inherit']
+            }
+        ]
+    },
+    top: {
+        id: "126",
+        definition: "For relatively positioned elements, the top property sets the top edge of an element to a unit above/below its normal position.", 
+        version: "2.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    touchAction: {
+        id: "127",
+        definition: "The touch-action CSS property specifies whether, and in what ways, a given region can be manipulated by the user via a touchscreen", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'none', 'pan-x', 'pan-left', 'pan-right', 'pan-y', 'pan-up', 'pan-down', 'pinch-zoom', 'manipulation', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    transitionDelay: {
+        id: "128",
+        definition: "The transition-delay property specifies when the transition effect will start.", 
+        version: "3.0",
+        syntax: {
+            "time": [
+                {
+                    type: 'time',
+                    values: ['time in seconds or milliseconds']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    transitionDuration: {
+        id: "129",
+        definition: "The transition-duration property specifies how many seconds (s) or milliseconds (ms) a transition effect takes to complete.", 
+        version: "3.0",
+        syntax: {
+            "time": [
+                {
+                    type: 'time',
+                    values: ['time in seconds or milliseconds']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    transitionProperty: {
+        id: "130",
+        definition: "The transition-property property specifies the name of the CSS property the transition effect is for (the transition effect will start when the specified CSS property changes).", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'all', 'property', 'initial', 'inherit']
+            }
+        ]
+    },
+    transitionTimingFunction: {
+        id: "131",
+        definition: "The transition-timing-function property specifies the speed curve of the transition effect.", 
+        version: "3.0",
+        syntax: [
+                {
+                    type: 'string',
+                    values: ['linear', 'ease', 'ease-in', 'ease-out', 'ease-in-out', 'step-start', 'step-end', 'steps(int,start, end)', 'cubic-bezier(n,n,n,n)', 'initial', 'inherit']
+                }
+        ]
+    },
+    unicodeBidi: {
+        id: "132",
+        definition: "The unicode-bidi property is used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document.", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['normal', 'embed', 'bidi-override', 'initial', 'inherit']
+            }
+        ]
+    },
+    verticalAlign: {
+        id: "133",
+        definition: "The vertical-align property sets the vertical alignment of an element.", 
+        version: ".0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['baseline', 'sub', 'super', 'top', 'text-top', 'middle', 'bottom', 'text-bottom', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    visibility: {
+        id: "134",
+        definition: "The visibility property specifies whether or not an element is visible.", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['visible', 'hidden', 'collapse', 'initial', 'inherit']
+            }
+        ]
+    },
+    whiteSpace: {
+        id: "135",
+        definition: "The white-space property specifies how white-space inside an element is handled.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['normal', 'nowrap', 'pre', 'pre-line', 'pre-wrap', 'initial', 'inherit']
+            }
+        ]
+    },
+    widows: {
+        id: "136",
+        definition: "The widows CSS property specifies the minimum number of lines in a block container that must be shown at the top of a page, region, or column. This property is normally used to control how breaks occur.", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'number',
+                values: ['integer']
+            }
+        ]
+    },
+    width: {
+        id: "137",
+        definition: "The width property sets the width of an element.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    willChange: {
+        id: "138",
+        definition: "The will-change CSS property provides a way for authors to hint browsers about the kind of changes to be expected on an element, so that the browser can set up appropriate optimizations ahead of time before the element is actually changed.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'scroll-position', 'contents', 'transform', 'opacity', 'inherit', 'initial', 'unset', 'left', 'top']
+            }
+        ]
+    },
+    wordBreak: {
+        id: "139",
+        definition: "The word-break property specifies line breaking rules for non-CJK scripts.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['normal', 'break-all', 'keep-all', 'initial', 'inherit']
+            }
+        ]
+    },
+    wordSpacing: {
+        id: "140",
+        definition: "The word-spacing property increases or decreases the white space between words.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['normal', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    wordWrap: {
+        id: "141",
+        definition: "The word-wrap property allows long words to be able to be broken and wrap onto the next line.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['normal', 'break-word', 'initial', 'inherit']
+            }
+        ]
+    },
+    zIndex: {
+        id: "142",
+        definition: "The z-index property specifies the stack order of an element.", 
+        version: "2.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['number']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    zoom: {
+        id: "143",
+        definition: "The zoom CSS Descriptor sets the initial zoom factor of a document defined by @viewport.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['number', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto']
+                }
+            ]
+        }
+    },
+    backfaceVisibility: {
+        id: "145",
+        definition: "The backface-visibility property defines whether or not the back face of an element should be visible when facing the user.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['visible', 'hidden', 'initial', 'inherit']
+            }
+        ]
+    },
+    columnCount: {
+        id: "161",
+        definition: "The column-count property specifies the number of columns an element should be divided into.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['number']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    columnGap: {
+        id: "162",
+        definition: "The column-gap property specifies the gap between the columns.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['normal', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    columnRuleColor: {
+        id: "163",
+        definition: "The column-rule-color property specifies the color of the rule between columns.", 
+        version: "3.0",
+        syntax: {
+            "color": [
+                {
+                    type: 'color_code',
+                    values: ['#000000']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    columnRuleStyle: {
+        id: "164",
+        definition: "The column-rule-style property specifies the style of the rule between columns.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'hidden', 'dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset', 'initial', 'inherit']
+            }
+        ]
     }
+	/* backgroundPosition: {
+		version: "1.0",
+		syntax: [
+			{
+				type: 'string',
+				values: ['left', 'right', 'center', 'top', 'bottom']
+			},
+			{
+				type: 'string',
+				values: ['left', 'right', 'center', 'top', 'bottom']
+			}
+        ]
+        syntax_new: {
+            "text": [
+                {
+                    type: 'string',
+                    values: ['left', 'right', 'center']
+                },
+                {
+                    type: 'string',
+                    values: ['top', 'center', 'bottom']
+                }
+            ],
+            "%": [
+                {
+                    type: 'percentage',
+                    values: ['x%']
+                },
+                {
+                    type: 'percentage',
+                    values: ['y%']
+                }
+            ]
+        } 
+	},*/
 };
