@@ -2165,7 +2165,1198 @@ var css = {
                 values: ['none', 'hidden', 'dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset', 'initial', 'inherit']
             }
         ]
-    }
+    },
+    columnRuleWidth: {
+        id: "165",
+        definition: "The column-rule-width property specifies the width of the rule between columns.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['medium', 'thin', 'thick', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    columnSpan: {
+        id: "166",
+        definition: "The column-span property specifies how many columns an element should span across.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'all', 'initial', 'inherit']
+            }
+        ]
+    },
+    columnWidth: {
+        id: "167",
+        definition: "The column-width property specifies a suggested, optimal width for the columns.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    alignContent: {
+        id: "168",
+        definition: "The align-content property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['stretch', 'center', 'flex-start', 'space-between', 'space-around', 'initial', 'inherit']
+            }
+        ]
+    },
+    alignItems: {
+        id: "169",
+        definition: "The align-items property specifies the default alignment for items inside the flexible container.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['stretch', 'center', 'flex-start', 'baseline', 'initial', 'inherit']
+            }
+        ]
+    },
+    alignSelf: {
+        id: "170",
+        definition: "The align-self property specifies the alignment for the selected item inside the flexible container.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'stretch', 'center', 'flex-start', 'flex-end', 'baseline', 'initial', 'inherit']
+            }
+        ]
+    },
+    flexBasis: {
+        id: "171",
+        definition: "The flex-basis property specifies the initial length of a flexible item.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['number']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    flexGrow: {
+        id: "172",
+        definition: "The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['number']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    flexShrink: {
+        id: "173",
+        definition: "The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['number']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    flexDirection: {
+        id: "174",
+        definition: "The flex-direction property specifies the direction of the flexible items.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['row', 'row-reverse', 'column', 'column-reverse', 'initial', 'inherit']
+            }
+        ]
+    },
+    flexWrap: {
+        id: "175",
+        definition: "The flex-wrap property specifies whether the flexible items should wrap or not.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['nowrap', 'wrap', 'wrap-reverse', 'initial', 'inherit']
+            }
+        ]
+    },
+    justifyContent: {
+        id: "176",
+        definition: "The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['flex-start', 'flex-end', 'center', 'space-between', 'space-around', 'initial', 'inherit']
+            }
+        ]
+    },
+    gridAutoColumns: {
+        id: "178",
+        definition: "The grid-auto-columns property sets a size for the columns in a grid container.", 
+        version: "CSS Grid Layout Module Level 1",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'max-content', 'min-content', 'length']
+            }
+        ]
+    },
+    gridAutoFlow: {
+        id: "179",
+        definition: "The grid-auto-flow property controls how auto-placed items get inserted in the grid.", 
+        version: "CSS Grid Layout Module Level 1",
+        syntax: [
+            {
+                type: 'string',
+                values: ['row', 'column', 'row-dense', 'column-dense']
+            }
+        ]
+    },
+    gridAutoRows: {
+        id: "180",
+        definition: "The grid-auto-rows property sets a size for the rows in a grid container.", 
+        version: "CSS Grid Layout Module Level 1",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'max-content', 'min-content']
+                }
+            ]
+        }
+    },
+    gridColumnEnd: {
+        id: "181",
+        definition: "The grid-column-end property defines how many columns an item will span, or on which column-line the item will end (see example at the end of this page).", 
+        version: "CSS Grid Layout Module Level 1",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['span n', 'column-line']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto']
+                }
+            ]
+        }
+    },
+    gridColumnStart: {
+        id: "182",
+        definition: "The grid-column-start property defines on which column-line the item will start.", 
+        version: "CSS Grid Layout Module Level 1",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['column-line']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto']
+                }
+            ]
+        }
+    },
+    gridTemplateAreas: {
+        id: "183",
+        definition: "The grid-template-areas property specifies how to display the grid layout.", 
+        version: "CSS Grid Layout Module Level 1",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'itemnames']
+            }
+        ]
+    },
+    gridTemplateColumns: {
+        id: "184",
+        definition: "The grid-template-columns property specifies the number of columns in a grid layout, it can also specify the size (width) of each column.", 
+        version: "CSS Grid Layout Module Level 1",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['max-content', 'min-content', 'length']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'auto', 'initial', 'inherit']
+                }
+            ]
+        }
+       
+    },
+    gridTemplateRows: {
+        id: "185",
+        definition: "The grid-template-rows property specifies the size (height) of the rows in a grid layout.", 
+        version: "CSS Grid Layout Module Level 1",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['max-content', 'min-content', 'length']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'auto']
+                }
+            ]
+        }
+    },
+    gridRowEnd: {
+        id: "186",
+        definition: "The grid-row-end property defines how many rows an item will span, or on which row-line the item will end (see example at the end of this page).", 
+        version: "CSS Grid Layout Module Level 1",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['span n', 'column-line']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto']
+                }
+            ]
+        }
+    },
+    gridRowStart: {
+        id: "187",
+        definition: "The grid-row-start property defines on which row-line the item will start.", 
+        version: "CSS Grid Layout Module Level 1",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['row-line']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto']
+                }
+            ]
+        }
+    },
+    gridColumnGap: {
+        id: "188",
+        definition: "The grid-column-gap property defines the size of the gap between the columns in a grid layout.",
+        syntax: [
+            {
+                type: 'number',
+                values: ['length']
+            }
+        ]
+    },
+    gridRowGap: {
+        id: "189",
+        definition: "The grid-row-gap property defines the size of the gap between the rows in a grid layout.", 
+        version: "CSS Grid Layout Module Level 1",
+        syntax: [
+            {
+                type: 'number',
+                values: ['length']
+            }
+        ]
+    },
+    hyphens: {
+        id: "191",
+        definition: "The hyphens CSS property specifies how words should be hyphenated when text wraps across multiple lines.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'manual', 'auto', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    order: {
+        id: "211",
+        definition: "The order property specifies the order of a flexible item relative to the rest of the flexible items inside the same container.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['number']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    perspective: {
+        id: "212",
+        definition: "The perspective property defines how many pixels a 3D element is placed from the view. This property allows you to change the perspective on how 3D elements are viewed.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', 'none']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    perspectiveOrigin: {
+        id: "213",
+        definition: "The perspective-origin property defines where a 3D element is based in the x- and the y-axis. This property allows you to change the bottom position of 3D elements.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                },
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "position": [
+                {
+                    type: 'position',
+                    values: ['left', 'center', 'right']
+                },
+                {
+                    type: 'position',
+                    values: ['top', 'center', 'bottom']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    shapeOutside: {
+        id: "216",
+        definition: "The shape-outside CSS property defines a shape around which inline content should wrap.", 
+        version: "3.0",
+        syntax: {
+            "url": [
+                {
+                    type: 'url',
+                    values: ['url']
+                }
+            ],
+            "functions": [
+                {
+                    type: 'function',
+                    values: ['circle()', 'ellipse()', 'inset()', 'polygon()']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'margin-box', 'content-box', 'border-box', 'padding-box', 'initial', 'inherit', 'unset']
+                }
+            ]
+        }
+    },
+    shapeImageThreshold: {
+        id: "217",
+        definition: "The shape-image-threshold CSS property defines the alpha channel threshold used to extract the shape using an image as the value for shape-outside.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['number']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit', 'unset']
+                }
+            ]
+        }
+    },
+    shapeMargin: {
+        id: "218",
+        definition: "The shape-margin CSS property adds a margin to shape-outside.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit', 'unset']
+                }
+            ]
+        }
+    },
+    transform: {
+        id: "230",
+        definition: "The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.", 
+        version: "3.0",
+        syntax: {
+            "functions": [
+                {
+                    type: 'function',
+                    values: ['matrix()', 'matrix3d()', 'translate()', 'translate3d()', 'translateX()', 'translateY()', 'translateZ()', 'scale()', 'scale3d()', 'scaleX()', 'scaleY()', 'scaleZ()', 'rotate()', 'rotate3d()', 'rotateX()', 'rotateY()', 'rotateZ()', 'skew()', 'skewX()', 'skewY()', 'perspective()']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit', 'none']
+                }
+            ]
+        }
+    },
+    transformOrigin: {
+        id: "231",
+        definition: "The transform-origin property allows you to change the position of transformed elements.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                },
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                },
+                {
+                    type: 'number',
+                    values: ['length']
+                }
+            ],
+            "position": [
+                {
+                    type: 'position',
+                    values: ['left', 'center', 'right']
+                },
+                {
+                    type: 'position',
+                    values: ['top', 'center', 'bottom']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['initial', 'inherit']
+                }
+            ]
+        }
+    },
+    transformStyle: {
+        id: "232",
+        definition: "The transform-style property specifies how nested elements are rendered in 3D space.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['flat', 'preserve-3d', 'initial', 'inherit']
+            }
+        ]
+    },
+    userSelect: {
+        id: "235",
+        definition: "The user-select property specifies whether the text of an element can be selected.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'none', 'text', 'all']
+            }
+        ]
+    },
+    bufferedRendering: {
+        id: "238",
+        definition: "SVG content providers can use this property to provide a hint to the implementation about how often an element is modified so it can make better speed vs. memory trade-offs.", 
+        version: "SVG",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'dynamic', 'static']
+            }
+        ]
+    },
+    clipPath: {
+        id: "239",
+        definition: "The clip-path CSS property creates a clipping region that defines what part of an element should be displayed.", 
+        version: "SVG",
+        syntax: {
+            "functions": [
+                {
+                    type: 'function',
+                    values: ['inset()', 'circle()', 'polygon()']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['url', 'fill-box', 'stroke-box', 'view-box', 'margin-box', 'border-box', 'padding-box', 'content-box', 'none', 'initial', 'inherit', 'unset']
+                }
+            ]
+        }
+    },
+    clipRule: {
+        id: "240",
+        definition: "The clip-rule attribute only applies to graphics elements that are contained within a <clipPath> element.", 
+        version: "SVG",
+        syntax: [
+            {
+                type: 'string',
+                values: ['nonzero', 'evenodd', 'inherit']
+            }
+        ]
+    },
+    mask: {
+        id: "241",
+        definition: "The mask CSS property alters the visibility of an element by either partially or fully hiding it.", 
+        version: "SVG",
+        syntax: {
+            "image": [
+                {
+                    type: 'image',
+                    values: ['url()']
+                }
+            ],
+            "combined": [
+                {
+                    type: 'combined',
+                    values: ['url()']
+                },
+                {
+                    type: 'combined',
+                    values: ['luminance', 'px px', 'px px px', 'repeat-x', 'stroke-box', 'exclude']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'initial', 'inherit', 'unset']
+                }
+            ]
+        }
+    },
+    filter: {
+        id: "242",
+        definition: "The filter property defines visual effects (like blur and saturation) to an element (often <img>).", 
+        version: "SVG",
+        syntax: {
+            "functions": [
+                {
+                    type: 'function',
+                    values: ['blur()', 'brightness()', 'contrast()', 'drop-shadow()', 'grayscale()', 'hue-rotate()', 'invert()', 'opacity()', 'saturate()', 'sepia()', 'url()']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'initial', 'inherit', 'unset']
+                }
+            ]
+        }
+    },
+    floodColor: {
+        id: "243",
+        definition: "The flood-color attribute indicates what color to use to flood the current filter primitive subregion defined through the <feFlood> element. ", 
+        version: "SVG",
+        syntax: {
+            "color": [
+                {
+                    type: 'color',
+                    values: ['currentColor', '<color>', '<iccolor>']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['inherit']
+                }
+            ]
+        }
+    },
+    floodOpacity: {
+        id: "244",
+        definition: "The flood-opacity attribute indicates the opacity value to use across the current filter primitive subregion defined through the <feFlood> element.", 
+        version: "SVG",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['<opacity value>']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['inherit']
+                }
+            ]
+        }
+    },
+    lightingColor: {
+        id: "245",
+        definition: "The lighting-color attribute defines the color of the light source for filter primitives elements <feDiffuseLighting> and <feSpecularLighting>.", 
+        version: "SVG",
+        syntax: {
+            "color": [
+                {
+                    type: 'color',
+                    values: ['currentColor', '<color>', '<iccolor>']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['inherit']
+                }
+            ]
+        }
+    },
+    stopColor: {
+        id: "246",
+        definition: "The stop-color attribute indicates what color to use at that gradient stop.", 
+        version: "SVG",
+        syntax: {
+            "color": [
+                {
+                    type: 'color',
+                    values: ['currentColor', '<color>', '<iccolor>']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['inherit']
+                }
+            ]
+        }
+    },
+    stopOpacity: {
+        id: "247",
+        definition: "The stop-opacity attribute defines the opacity of a given gradient stop.", 
+        version: "SVG",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['<opacity-value>']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['inherit']
+                }
+            ]
+        }
+    },
+    colorInterpolation: {
+        id: "248",
+        definition: "The color-interpolation attribute specifies the color space for gradient interpolations, color animations, and alpha compositing.", 
+        version: "SVG",
+        syntax: {
+            "color": [
+                {
+                    type: 'color',
+                    values: ['sRGB', 'linearRGB']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'inherit']
+                }
+            ]
+        }
+    },
+    colorInterpolationFilters: {
+        id: "249",
+        definition: "The color-interpolation-filters attribute specifies the color space for imaging operations performed via filter effects.", 
+        version: "SVG",
+        syntax: {
+            "color": [
+                {
+                    type: 'color',
+                    values: ['sRGB', 'linearRGB']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'inherit']
+                }
+            ]
+        }
+    },
+    colorRendering: {
+        id: "250",
+        definition: "The color-rendering attribute provides a hint to the SVG user agent about how to optimize its color interpolation and compositing operations.", 
+        version: "SVG",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'optimizeSpeed', 'optimizeQuality', 'inherit']
+            }
+        ]
+    },
+    fill: {
+        id: "251",
+        definition: " The fill attribute can be used to maintain the value of an animation after the active duration of an animation element ends.", 
+        version: "SVG",
+        syntax: [
+            {
+                type: 'string',
+                values: ['remove', 'freeze']
+            }
+        ]
+    },
+    fillOpacity: {
+        id: "252",
+        definition: "This attribute specifies the opacity of the color or the content the current object is filled with.", 
+        version: "SVG",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['<opacity-value>']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['inherit']
+                }
+            ]
+        }
+    },
+    fillRule: {
+        id: "253",
+        definition: "The fill-rule attribute indicates how to determine what side of a path is inside a shape, to determine how the fill property paints the shape. ", 
+        version: "SVG",
+        syntax: [
+            {
+                type: 'string',
+                values: ['nonzero', 'evenodd', 'inherit']
+            }
+        ]
+    },
+    markerEnd: {
+        id: "254",
+        definition: "The marker-end defines the arrowhead or polymarker that will be drawn at the final vertex of the given <path> element or basic shape.", 
+        version: "SVG",
+        syntax: {
+            "function": [
+                {
+                    type: 'function',
+                    values: ['<funcri>']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'inherit']
+                }
+            ]
+        }
+    },
+    markerMid: {
+        id: "255",
+        definition: "The marker-mid defines the arrowhead or polymarker that shall be drawn at every vertex other than the first and last vertex of the given <path> element or basic shape.", 
+        version: "SVG",
+        syntax: {
+            "function": [
+                {
+                    type: 'function',
+                    values: ['<funcri>']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'inherit']
+                }
+            ]
+        }
+    },
+    markerStart: {
+        id: "256",
+        definition: "The marker-start attribute defines the arrowhead or polymarker that will be drawn at the first vertex of the given <path> element or basic shape.", 
+        version: "SVG",
+        syntax: {
+            "function": [
+                {
+                    type: 'function',
+                    values: ['<funcri>']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'inherit']
+                }
+            ]
+        }
+    },
+    maskType: {
+        id: "257",
+        definition: "The CSS mask-type property defines if a mask defined by an SVG <mask> element is used as a luminance or an alpha mask. ", 
+        version: "SVG",
+        syntax: [
+            {
+                type: 'string',
+                values: ['luminance', 'alpha', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    shapeRendering: {
+        id: "258",
+        definition: "The shape-rendering property provides a hint about what tradeoffs to make as the browser renders <path> element or basic shapes", 
+        version: "SVG",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'optimizeSpeed', 'crispEdges', 'geometricPrecision', 'inherit']
+            }
+        ]
+    },
+    stroke: {
+        id: "259",
+        definition: "The stroke property in CSS is for adding a border to SVG shapes.", 
+        version: "SVG",
+        syntax: [
+            {
+                type: 'color',
+                values: ['color_code']
+            }
+        ]
+    },
+    strokeDasharray: {
+        id: "260",
+        definition: "the stroke-dasharray attribute controls the pattern of dashes and gaps used to stroke paths.", 
+        version: "SVG",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', '<dasharray>', 'inherit']
+            }
+        ]
+    },
+    strokeDashoffset: {
+        id: "261",
+        definition: "The stroke-dashoffset property in CSS defines the location along an SVG path where the dash of a stroke will begin. The higher the number, the further along the path the dashes will begin.", 
+        version: "SVG",
+        syntax: [
+            {
+                type: 'number',
+                values: ['length', '%']
+            }
+        ]
+    },
+    strokeLinecap: {
+        id: "262",
+        definition: "The stroke-linecap property in CSS is for setting the starting and ending points of a border on SVG shapes.", 
+        version: "SVG",
+        syntax: [
+            {
+                type: 'string',
+                values: ['butt', 'square', 'round']
+            }
+        ]
+    },
+    strokeLinejoin: {
+        id: "263",
+        definition: "The stroke-linejoin attribute specifies the shape to be used at the corners of paths or basic shapes when they are stroked.", 
+        version: "SVG",
+        syntax: [
+            {
+                type: 'string',
+                values: ['miter', 'round', 'bevel', 'inherit']
+            }
+        ]
+    },
+    strokeMiterlimit: {
+        id: "264",
+        definition: "When two line segments meet at a sharp angle and miter joins have been specified for stroke-linejoin, it is possible for the miter to extend far beyond the thickness of the line stroking the path. The stroke-miterlimit imposes a limit on the ratio of the miter length to the stroke-width. When the limit is exceeded, the join is converted from a miter to a bevel.", 
+        version: "SVG",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['<miterlimit>']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['inherit']
+                }
+            ]
+        }
+    },
+    strokeOpacity: {
+        id: "265",
+        definition: "the stroke-opacity attribute specifies the opacity of the outline on the current object. ", 
+        version: "SVG",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['<opacity-value>']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['inherit']
+                }
+            ]
+        }
+    },
+    strokeWidth: {
+        id: "266",
+        definition: "The stroke-width property in CSS is for setting the width of a border on SVG shapes.", 
+        version: "SVG",
+        syntax: [
+            {
+                type: 'number',
+                values: ['number']
+            }
+        ]
+    },
+    alignmentBaseline: {
+        id: "267",
+        definition: "The alignment-baseline attribute specifies how an object is aligned with respect to its parent.", 
+        version: "SVG",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'baseline', 'before-edge', 'text-before-edge', 'middle', 'central', 'after-edge', 'text-after-edge', 'ideographic', 'alphabetic', 'hanging', 'mathematical', 'inherit']
+            }
+        ]
+    },
+    baselineShift: {
+        id: "268",
+        definition: "The baseline-shift attribute allows repositioning of the dominant-baseline relative to the dominant-baseline of the parent text content element. The shifted object might be a sub- or superscript.", 
+        version: "SVG",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['%', 'length']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'baseline', 'super', 'sub', 'inherit']
+                }
+            ]
+        }
+    },
+    dominantBaseline: {
+        id: "269",
+        definition: "The dominant-baseline property is used to determine or re-determine a scaled-baseline-table.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'use-script', 'no-change', 'reset-size', 'alphabetic', 'hanging', 'ideographic', 'mathematical', 'central', 'middle', 'text-after-edge', 'text-before-edge']
+            }
+        ]
+    },
+    textAnchor: {
+        id: "270",
+        definition: "The text-anchor attribute is used to align (start-, middle- or end-alignment) a string of text relative to a given point.", 
+        version: "SVG",
+        syntax: [
+            {
+                type: 'string',
+                values: ['start', 'middle', 'end', 'inherit']
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
 	/* backgroundPosition: {
 		version: "1.0",
 		syntax: [
