@@ -4069,11 +4069,40 @@ var css = {
             }
         ]
     },
+    all: {
+        id: "284",
+        definition: "The all property resets all properties, apart from unicode-bidi and direction, to their initial or inherited value.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['initial', 'inherit', 'unset']
+            }
+        ]
+    },
+    animation: {
+        id: "285",
+        definition: "The animation property is a shorthand property for eight of the animation properties: animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, animation-play-state", 
+        version: "3.0",
+        syntax: {
+            "values": [
+                {
+                    type: 'values',
+                    values: ['animation-duration', 'animation-delay', 'animation-timing-function', 'animation-iteration-count']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['animation-name', 'animation-direction', 'animation-fill-mode', 'animation-play-state', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
     property: {
         id: "",
         definition: "", 
         version: ".0",
-        prefixes: ["-webkit-", "-moz-", "-ms-", "-o-"],
         syntax: [
             {
                 type: 'string',
@@ -4085,7 +4114,6 @@ var css = {
         id: "",
         definition: "", 
         version: ".0",
-        prefixes: ["-webkit-", "-moz-", "-ms-", "-o-"],
         syntax: [
             {
                 type: 'string',
@@ -4097,7 +4125,50 @@ var css = {
         id: "",
         definition: "", 
         version: ".0",
-        prefixes: ["-webkit-", "-moz-", "-ms-", "-o-"],
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
         syntax: [
             {
                 type: 'string',
