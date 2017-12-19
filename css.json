@@ -4099,6 +4099,683 @@ var css = {
             ]
         }
     },
+    background: {
+        id: "286",
+        definition: "The background shorthand property sets all the background properties in one declaration.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['background-color', 'background-image', 'background-position', 'background-size', 'background-repeat', 'background-origin', 'background-clip', 'background-attachmet', 'initial', 'inherit']
+            }
+        ]
+    },
+    backgroundPositionX: {
+        id: "287",
+        definition: "The background-position-x CSS property sets the initial horizontal position, relative to the background position layer defined by background-origin for each defined background image.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['left', 'center', 'right', 'unset', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    backgroundPositionY: {
+        id: "288",
+        definition: "The background-position-y CSS property sets the initial vertical position, relative to the background position layer defined by background-origin for each defined background image.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['left', 'center', 'right', 'unset', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    blockSize: {
+        id: "289",
+        definition: "The block-size CSS property defines the horizontal or vertical size of an element's block, depending on its writing mode. It corresponds to either the width or the height property, depending on the value of writing-mode.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['border-box', 'content-box', 'max-content', 'min-content', 'available', 'fit-content', 'auto', 'inherit', 'initial', 'unset']
+                }
+            ]
+        }
+    },
+    border: {
+        id: "290",
+        definition: "The border property is a shorthand property for border-width, border-style and border-color.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['border-width (px)']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['border-width (thin,thick)', 'border-style', 'border-color', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    borderBottom: {
+        id: "291",
+        definition: "The border-bottom shorthand property sets all the bottom border properties in one declaration.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['border-bottom-width (px)']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['border-bottom-width (thin,thick)', 'border-bottom-style', 'border-bottom-color', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    borderLeft: {
+        id: "292",
+        definition: "The border-left shorthand property sets all the left border properties in one declaration.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['border-left-width (px)']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['border-left-width (thin,thick)', 'border-left-style', 'border-left-color', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    borderRadius: {
+        id: "293",
+        definition: "The border-radius property defines the radius of the element's corners.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['inherit', 'initial']
+                }
+            ]
+        }
+    },
+    borderRight: {
+        id: "294",
+        definition: "", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['border-right-width (px)']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['border-right-width (thin,thick)', 'border-right-style', 'border-right-color', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    borderStyle: {
+        id: "295",
+        definition: "The border-style property sets the style of an element's four borders. This property can have from one to four values.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'hidden', 'dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset', 'initial', 'inherit']
+            }
+        ]
+    },
+    borderTop: {
+        id: "296",
+        definition: "The border-top shorthand property sets all the top border properties in one declaration.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['border-top-width (px)']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['border-top-width (thin,thick)', 'border-top-style', 'border-top-color', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    breakAfter: {
+        id: "297",
+        definition: "The break-after CSS property defines how page, column, or region breaks should behave after a generated box. If there is no generated box, the property is ignored.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'avoid', 'avoid-page', 'page', 'always', 'left', 'right', 'recto', 'verso', 'avoid-column', 'column', 'avoid-region', 'region', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    breakBefore: {
+        id: "298",
+        definition: "The break-before CSS property defines how page, column, or region breaks should behave before a generated box. If there is no generated box, the property is ignored.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'avoid', 'avoid-page', 'page', 'always', 'left', 'right', 'recto', 'verso', 'avoid-column', 'column', 'avoid-region', 'region', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    breakInside: {
+        id: "299",
+        definition: "The break-inside CSS property defines how page, column, or region breaks should behave inside a generated box. If there is no generated box, the property is ignored.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'avoid', 'avoid-page', 'avoid-column', 'avoid-region', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    columnFill: {
+        id: "300",
+        definition: "The column-fill property specifies how to fill columns, balanced or not.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['balance', 'auto', 'initial', 'inherit']
+            }
+        ]
+    },
+    columnRule: {
+        id: "301",
+        definition: "The column-rule property sets the width, style, and color of the rule between columns.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['column-rule-width']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['column-rule-width', 'column-rule-style', 'column-rule-color', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    columns: {
+        id: "302",
+        definition: "The columns property is a shorthand property for the column-width and column-count properties.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['column-width', 'column-count']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    contain: {
+        id: "303",
+        definition: "The contain property allows an author to indicate that an element and its contents are, as much as possible, independent of the rest of the document tree.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'strict', 'content', 'size', 'layout', 'style', 'paint']
+            }
+        ]
+    },
+    counterIncrement: {
+        id: "304",
+        definition: "The counter-increment property increments one or more counter values.", 
+        version: "2.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['id number']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    counterReset: {
+        id: "305",
+        definition: "The counter-reset property creates or resets one or more counters. The counter-reset property is usually used together with the counter-increment property and the content property.", 
+        version: "2.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['number']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'name', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    cssFloat: {
+        id: "306",
+        definition: "The cssFloat property sets or returns the horizontal alignment of an element.", 
+        version: "DOM 2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'left', 'right', 'initial', 'inherit']
+            }
+        ]
+    },
+    cssText: {
+        id: "307",
+        definition: "The cssText property sets or returns the contents of a style declaration as a string.", 
+        version: "DOM 2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['string']
+            }
+        ]
+    },
+    flex: {
+        id: "308",
+        definition: "The flex property specifies the length of the item, relative to the rest of the flexible items inside the same container. The flex property is a shorthand for the flex-grow, flex-shrink, and the flex-basis properties.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['flex-grow', 'flex-shrink', 'flex-basis', 'auto', 'initial', 'none', 'inherit']
+            }
+        ]
+    },
+    flexFlow: {
+        id: "309",
+        definition: "The flex-flow property is a shorthand property for the flex-direction and the flex-wrap properties.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['flex-direction', 'flex-wrap', 'initial', 'inherit']
+            }
+        ]
+    },
+    font: {
+        id: "310",
+        definition: "The font shorthand property sets all the font properties in one declaration.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['font-style', 'font-variant', 'font-weight', 'font-size/line-height', 'font-family', 'caption', 'icon', 'menu', 'message-box', 'small-caption', 'status-bar', 'initial', 'inherit']
+            }
+        ]
+    },
+    fontDisplay: {
+        id: "311",
+        definition: "The font-display descriptor determines how a font face is displayed based on whether and when it is downloaded and ready to use.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto', 'block', 'swap', 'fallback', 'optional']
+            }
+        ]
+    },
+    fontFeatureSettings: {
+        id: "312",
+        definition: "The font-feature-settings CSS property gives you control over advanced typographic features in OpenType fonts.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['number']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['normal', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    fontVariantLigatures: {
+        id: "313",
+        definition: "The font-variant-ligatures CSS property controls which ligatures and contextual forms are used in textual content of the elements it applies to. This leads to more harmonized forms in the resulting text.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['normal', 'none', 'common-ligatures', 'no-common-ligatures', 'discretionary-ligatures', 'no-discretionary-ligatures', 'historical-ligatures', 'no-historical-ligatures', 'contextual', 'no-contextual', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    fontVariationSettings: {
+        id: "314",
+        definition: "The font-variation-settings CSS property provides low-level control over OpenType or TrueType font variations, by specifying the four letter axis names of the features you want to vary, along with their variation values.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['value']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['normal', 'initial', 'inherit', 'unset']
+                }
+            ]
+        }
+    },
+    grid: {
+        id: "315",
+        definition: "The grid CSS property is a shorthand property that sets all of the explicit grid properties (grid-template-rows, grid-template-columns, and grid-template-areas), and all the implicit grid properties (grid-auto-rows, grid-auto-columns, and grid-auto-flow), in a single declaration.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'auto-flow', 'dense', 'initial', 'inherit', 'unset']
+                }
+            ]
+        }
+    },
+    gridArea: {
+        id: "316",
+        definition: "The grid-area CSS property is a shorthand property for grid-row-start, grid-column-start, grid-row-end and grid-column-end, specifying a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the edges of its grid area.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['value']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'some-grid-area', 'span', 'another-grid-area', 'inherit', 'initial', 'unset']
+                }
+            ]
+        }
+    },
+    gridColumn: {
+        id: "317",
+        definition: "The grid-column property is a shorthand property for the grid-column-start and the grid-column-end properties.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'value',
+                values: ['grid-column-start', 'grid-column-end']
+            }
+        ]
+    },
+    gridGap: {
+        id: "318",
+        definition: "The grid-gap property defines the size of the gap between the rows and columns in a grid layout.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'value',
+                values: ['length', 'length']
+            }
+        ]
+    },
+    gridRow: {
+        id: "319",
+        definition: "The grid-row CSS property is a shorthand property for grid-row-start and grid-row-end specifying a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['value']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'somegridarea', 'span', 'inherit', 'initial', 'unset']
+                }
+            ]
+        }
+    },
+    gridTemplate: {
+        id: "320",
+        definition: "The grid-template CSS property is a shorthand property for defining grid columns, rows, and areas.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'inherit', 'initial', 'unset']
+                }
+            ]
+        }
+    },
+    inlineSize: {
+        id: "321",
+        definition: "The inline-size CSS property defines the horizontal or vertical size of an element's block, depending on its writing mode. It corresponds to either the width or the height property, depending on the value of writing-mode.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'max-content', 'min-content', 'available', 'fit-content', 'inherit', 'initial', 'unset']
+                }
+            ]
+        }
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    },
     property: {
         id: "",
         definition: "", 
