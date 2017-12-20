@@ -4655,237 +4655,426 @@ var css = {
             ]
         }
     },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-    property: {
-        id: "",
-        definition: "", 
-        version: ".0",
-        syntax: [
-            {
-                type: 'string',
-                values: []
-            }
-        ]
-    },
-	/* backgroundPosition: {
-		version: "1.0",
-		syntax: [
-			{
-				type: 'string',
-				values: ['left', 'right', 'center', 'top', 'bottom']
-			},
-			{
-				type: 'string',
-				values: ['left', 'right', 'center', 'top', 'bottom']
-			}
-        ]
-        syntax_new: {
-            "text": [
+    left: {
+        id: "322",
+        definition: "For absolutely positioned elements, the left property sets the left edge of an element to a unit to the left/right of the left edge of its nearest positioned ancestor.", 
+        version: "2.0",
+        syntax: {
+            "number": [
                 {
-                    type: 'string',
-                    values: ['left', 'right', 'center']
-                },
-                {
-                    type: 'string',
-                    values: ['top', 'center', 'bottom']
+                    type: 'number',
+                    values: ['length', '%']
                 }
             ],
-            "%": [
+            "string": [
                 {
-                    type: 'percentage',
-                    values: ['x%']
-                },
-                {
-                    type: 'percentage',
-                    values: ['y%']
+                    type: 'string',
+                    values: ['auto','inherit', 'initial']
                 }
             ]
-        } 
-	},*/
+        }
+    },
+    lightingColor: {
+        id: "323",
+        definition: "The lighting-color attribute defines the color of the light source for filter primitives elements <feDiffuseLighting> and <feSpecularLighting>.", 
+        version: "SVG",
+        syntax: {
+            "color": [
+                {
+                    type: 'color',
+                    values: ['currentColor', '<color>', '<iccolor>']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['inherit']
+                }
+            ]
+        }
+    },
+    listStyle: {
+        id: "324",
+        definition: "The list-style shorthand property sets all the list properties in one declaration.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['list-style-type', 'list-style-position', 'list-style-image', 'initial', 'inherit']
+            }
+        ]
+    },
+    margin: {
+        id: "325",
+        definition: "The margin shorthand property sets all the margin properties in one declaration. This property can have from one to four values.", 
+        version: "1.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    marker: {
+        id: "326",
+        definition: "The ::marker CSS pseudo-element selects the marker box of a list item, which typically contains a bullet or number. It works on any element or pseudo-element set to display: list-item, such as the <li> and <summary> elements.", 
+        version: "3.0",
+        syntax: {
+            "color": [
+                {
+                    type: 'color_code',
+                    values: ['color-code']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['text-combine-upright']
+                }
+            ]
+        }
+    },
+    maxBlockSize: {
+        id: "327",
+        definition: "The max-block-size CSS property specifies the maximum size of an element in the direction opposite that of the writing direction as specified by writing-mode.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'max-content', 'fit-content', 'fill-available', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    maxInlineSize: {
+        id: "328",
+        definition: "he max-inline-size CSS property defines the horizontal or vertical maximum size of an element's block depending on its writing mode. It corresponds to the max-width or the max-height property depending on the value defined for writing-mode. ", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['none', 'max-content', 'fit-content', 'fill-available', 'initial', 'inherit', 'unset']
+                }
+            ]
+        }
+    },
+    maxZoom: {
+        id: "329",
+        definition: "The max-zoom CSS descriptor sets the maximum zoom factor of a document defined by the @viewport at-rule. The browser will not zoom in any further than this, whether automatically or at the user's request.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto']
+                }
+            ]
+        }
+    },
+    minBlockSize: {
+        id: "330",
+        definition: "The min-block-size CSS property defines the minimum horizontal or vertical size of an element's block, depending on its writing mode. It corresponds to either the min-width or the min-height property, depending on the value of writing-mode.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['max-content', 'min-content', 'fit-content', 'fill-available', 'inherit', 'initial', 'unset']
+                }
+            ]
+        }
+    },
+    minInlineSize: {
+        id: "331",
+        definition: "The min-inline-size CSS property defines the horizontal or vertical minimal size of an element's block, depending on its writing mode. It corresponds to either the min-width or the min-height property, depending on the value of writing-mode.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['max-content', 'min-content', 'fit-content', 'fill-available', 'inherit', 'initial', 'unset']
+                }
+            ]
+        }
+    },
+    minZoom: {
+        id: "332",
+        definition: "The min-zoom CSS descriptor sets the minimum zoom factor of a document defined via @viewport. The browser will not zoom out any further than this, whether automatically or at the user's request.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length', '%']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto']
+                }
+            ]
+        }
+    },
+    offset: {
+        id: "333",
+        definition: "The offset CSS property is a shorthand property for animating an element along a defined path.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['length']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'none']
+                }
+            ],
+            "functions": [
+                {
+                    type: 'string',
+                    values: ['ray()', 'path()', 'url()']
+                }
+            ]
+        }
+    },
+    orientation: {
+        id: "334",
+        definition: "The orientation CSS @media media feature can be used to apply styles based on the orientation of the viewport (or the page box, for paged media).", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['portrait', 'landscape']
+            }
+        ]
+    },
+    outline: {
+        id: "335",
+        definition: "An outline is a line that is drawn around elements, outside the borders, to make the element stand out.", 
+        version: "2.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['outline-width']
+                }
+            ],
+            "color": [
+                {
+                    type: 'color_code',
+                    values: ['outline-color']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['outline-style', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    overflow: {
+        id: "336",
+        definition: "The overflow property specifies what happens if content overflows an element's box.", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['visible', 'hidden', 'scroll', 'auto', 'initial', 'inherit']
+            }
+        ]
+    },
+    padding: {
+        id: "337",
+        definition: "The CSS padding properties are used to generate space around an element's content, inside of any defined borders.", 
+        version: "1.0",
+        syntax: [
+            {
+                type: 'number',
+                values: ['padding', 'padding-bottom', 'padding-left', 'padding-right', 'padding-right', 'padding-top']
+            }
+        ]
+    },
+    page: {
+        id: "338",
+        definition: "The @page CSS at-rule is used to modify some CSS properties when printing a document. You can't change all CSS properties with @page. You can only change the margins, orphans, widows, and page breaks of the document. Attempts to change any other CSS properties will be ignored.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'descriptors',
+                values: ['size', 'marks', 'bleed']
+            }
+        ]
+    },
+    placeContent: {
+        id: "339",
+        definition: "The place-content CSS shorthand property sets both the align-content and justify-content properties.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['center start', 'start center', 'end left', 'flex-start center', 'flex-end center', 'left center', 'right end', 'baseline baseline', 'first baseline last baseline', 'last baseline baseline', 'space-between space-evenly', 'space-around space-evenly', 'space-evenly stretch', 'stretch space-evenly', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    placeItems: {
+        id: "340",
+        definition: "The CSS place-items shorthand property sets both the align-items and justify-items properties. The first value is the align-items property value, the second the justify-items one. If the second value is not present, the first value is also used for it.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto center', 'normal start', 'center normal', 'start auto', 'end normal', 'self-start auto', 'self-end normal', 'flex-start auto', 'flex-end normal', 'left auto', 'right normal', 'baseline normal', 'first baseline auto', 'last baseline normal', 'stretch auto', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    placeSelf: {
+        id: "341",
+        definition: "The place-self CSS property shorthand property sets both the align-self and justify-self properties. The first value is the align-self property value, the second the justify-self one. If the second value is not present, the first value is also used for it.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['auto center', 'normal start', 'center normal', 'start auto', 'end normal', 'self-start auto', 'self-end normal', 'flex-start auto', 'flex-end normal', 'left auto', 'right normal', 'baseline normal', 'first baseline auto', 'last baseline normal', 'stretch auto', 'inherit', 'initial', 'unset']
+            }
+        ]
+    },
+    quotes: {
+        id: "342",
+        definition: "The quotes property sets the type of quotation marks for quotations.", 
+        version: "2.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['none', 'string string string string', 'initial', 'inherit']
+            }
+        ]
+    },
+    size: {
+        id: "343",
+        definition: "The size CSS at-rule descriptor, used with the @page at-rule, defines the size and orientation of the box which is used to represent a page. Most of the time, this size corresponds to the target size of the printed page if applicable.", 
+        version: "3.0",
+        syntax: {
+            "number": [
+                {
+                    type: 'number',
+                    values: ['size']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['auto', 'portrait', 'landscape', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    src: {
+        id: "344",
+        definition: "The src CSS descriptor of the @font-face rule specifies the resource containing font data. It is required for the @font-face rule to be valid.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'value',
+                values: ['url()', 'local()']
+            }
+        ]
+    },
+    transition: {
+        id: "345",
+        definition: "The transition property is a shorthand property for the four transition properties: transition-property, transition-duration, transition-timing-function, and transition-delay.", 
+        version: "3.0",
+        syntax: {
+            "time": [
+                {
+                    type: 'time',
+                    values: ['transition-duration', 'transition-timing-function']
+                }
+            ],
+            "string": [
+                {
+                    type: 'string',
+                    values: ['transition-property', 'transition-delay', 'initial', 'inherit']
+                }
+            ]
+        }
+    },
+    unicodeRange: {
+        id: "346",
+        definition: "The unicode-range CSS descriptor sets the specific range of characters to be used from a font defined by @font-face and made available for use on the current page. ", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'values',
+                values: ['unicode range values']
+            }
+        ]
+    },
+    userZoom: {
+        id: "347",
+        definition: "The user-zoom CSS descriptor controls whether or not the user can change the zoom factor of a document defined by @viewport.", 
+        version: "3.0",
+        syntax: [
+            {
+                type: 'string',
+                values: ['zoom', 'fixed']
+            }
+        ]
+    }/* ,
+    property: {
+        id: "",
+        definition: "", 
+        version: ".0",
+        syntax: [
+            {
+                type: 'string',
+                values: []
+            }
+        ]
+    }, */
+    
 };

@@ -1,0 +1,178 @@
+var attributes = {
+    "global" : ["accesskey", "contenteditable", "contextmenu", "dir", "draggable", "dropzone", "hidden", "lang", "spellcheck", "tabindex", "title", "translate", "style", "id", "class", "data"]
+};
+
+var event_attributes = {
+    "window_events" : ["onafterprint", "onbeforeprint", "onbeforeunload", "onerror", "onhaschange", "onload", "onmessage", "onoffline", "ononline", "onpagehide", "onpageshow", "onpopstate", "onresize", "onstorage", "onunload"],
+    "form_events" : ["onblur", "onchange", "oncontextmenu", "onfocus", "oninput", "oninvalid", "onreset", "onreset", "onsearch", "onselect", "onsubmit"],
+    "keyboard_events" : ["onkeydown", "onkeypress", "onkeyup"],
+    "mouse_events" : ["onclick", "ondblclick", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "onmousewheel", "onwheel"],
+    "drag_events" : ["ondrag", "ondragend", "ondragenter", "ondragleave", "ondragover", "ondragstart", "ondrop", "onscroll"],
+    "clipboard_events" : ["oncopy", "oncut", "onpaste"],
+    "media_events" : ["onabort", "oncanplay", "oncanplaythrough", "oncuechange", "ondurationchange", "onemptied", "onerror", "onloadeddata", "onloadstart", "onpause", "onplay", "onplaying", "onprogress", "onratechange", "onseeked", "onseeking", "onstalled", "onsuspend", "ontimeupdate", "onvolumechange", "onwaiting"],
+    "misc_events" : ["onshow", "ontoggle"]
+};
+
+
+var html_elements = {
+    
+    "basic_tags" : {
+        "p" : {"syntax" : "<p>Paragraph</p>", "attributes" : [attributes.global]},
+        "h1" : {"syntax" : "<h1>Heading 1</h1>", "attributes" : [attributes.global]},
+        "h2" : {"syntax" : "<h2>Heading 2</h2>", "attributes" : [attributes.global]},
+        "h3" : {"syntax" : "<h3>Heading 3</h3>", "attributes" : [attributes.global]},
+        "h4" : {"syntax" : "<h4>Heading 4</h4>", "attributes" : [attributes.global]},
+        "h5" : {"syntax" : "<h5>Heading 5</h5>", "attributes" : [attributes.global]},
+        "h6" : {"syntax" : "<h6>Heading 6</h6>", "attributes" : [attributes.global]}
+    },
+    
+    "formatting_tags" : {
+        
+        "abbr" : {"syntax" : "<abbr>abbr</abbr>", "attributes" : [attributes.global]},
+        "address" : {"syntax" : "<address>address</address>", "attributes" : [attributes.global]},
+        "bold" : {"syntax" : "<b>Bold Text</b>", "attributes" : [attributes.global]},
+        "bdi" : {"syntax" : "<bdi>إيان</bdi>", "attributes" : [attributes.global]},
+        "bdo" : {"syntax" : "<bdo>Left to Right</bdo>", "attributes" : [attributes.global, "dir"]},
+        "blockquote" : {"syntax" : "<blockquote>blockquote</blockquote>", "attributes" : [attributes.global, "cite"]},
+        "cite" : {"syntax" : "<cite>Citeworthy Title</cite>", "attributes" : [attributes.global]},
+        "code" : {"syntax" : "<code>A piece of computer code</code>", "attributes" : [attributes.global]},
+        "del" : {"syntax" : "<del>Line-Through</del>", "attributes" : [attributes.global]},
+        "dfn" : {"syntax" : "<dfn>HTML</dfn>", "attributes" : [attributes.global]},
+        "em" : {"syntax" : "<em>Emphasized Text</em>", "attributes" : [attributes.global]},
+        "i" : {"syntax" : "<i>Italicized Text</i>", "attributes" : [attributes.global]},
+        "ins" : {"syntax" : "<ins>An Inserted Text</ins>", "attributes" : [attributes.global, "cite", "datetime"]},
+        "kbd" : {"syntax" : "<kbd>Keyboard Input</kbd>", "attributes" : [attributes.global]},
+        "mark" : {"syntax" : "<mark>Highlighted Text</mark>", "attributes" : [attributes.global]},
+        "meter" : {"syntax" : "<meter></meter>", "attributes" : [attributes.global, "form", "high", "low", "max", "min", "optimum", "value"]},
+        "pre" : {"syntax" : "<pre>Preformatted Text</pre>", "attributes" : [attributes.global, "width"]},
+        "progress" : {"syntax" : "<progress></progress>", "attributes" : [attributes.global, "max", "value"]},
+        "q" : {"syntax" : "<q>short quotation</q>", "attributes" : [attributes.global, "cite"]},
+        "rp" : {"syntax" : "<rp>used to provide parentheses around a ruby text, to be shown by browsers that do not support ruby annotations.</rp>", "attributes" : [attributes.global]},
+        "rt" : {"syntax" : "<rt>defines an explanation or pronunciation of characters (for East Asian typography) in a ruby annotation</rt>", "attributes" : [attributes.global]},
+        "ruby" : {"syntax" : "<ruby>Specifies a ruby annotation</ruby>", "attributes" : [attributes.global]},
+        "s" : {"syntax" : "<s>Line-Through</s>", "attributes" : [attributes.global]},
+        "samp" : {"syntax" : "<samp>Sample output from a computer program</samp>", "attributes" : [attributes.global]},
+        "small" : {"syntax" : "<small>Defines smaller text</small>", "attributes" : [attributes.global]},
+        "strong" : {"syntax" : "<strong>Strong Text</strong>", "attributes" : [attributes.global]},
+        "sub" : {"syntax" : "<sub>Subscript Text</sub>", "attributes" : [attributes.global]},
+        "sup" : {"syntax" : "<sup>Superscript Text</sup>", "attributes" : [attributes.global]},
+        "time" : {"syntax" : "<time>Defines human readable time</time>", "attributes" : [attributes.global]},
+        "u" : {"syntax" : "<u>Underlined Text</u>", "attributes" : [attributes.global]},
+        "var" : {"syntax" : "<var>Defines a variable</var>", "attributes" : [attributes.global]},
+        "wbr" : {"syntax" : "<wbr>Word Break Opportunity</wbr>", "attributes" : [attributes.global]},
+        "br" : {"syntax" : "<br>", "attributes" : [attributes.global]},
+        "data" : {"syntax" : "<data value='21053'>Cherry Tomato</data>", "attributes" : [attributes.global, "value"]},
+        "hr" : {"syntax" : "<hr>", "attributes" : [attributes.global, "align", "noshade", "size", "width"]}
+
+    },
+    "form_and_input_tags" : {
+        
+        "form" : {"syntax" : "<form>form</form>", "attributes" : ["name", "method", "autocomplete", "accept-charset", "action", "enctype", "novalidate", "target"]},
+        "input" : {"syntax" : "<input>","attributes" : ["style", "accept", "alt", "autocomplete", "autofocus", "checked", "dirname", "disabled", "form", "formaction", "formenctype", "formmethod", "formnovalidate", "formtarget", "height", "list", "max", "maxlength", "min", "multiple", "name", "pattern", "placeholder", "readonly", "required", "size", "src", "step", "type", "value", "width"]},
+        "textarea" : {"syntax" : "<textarea>Textarea</textarea>", "attributes" : ["style", "autofocus", "cols", "dirname", "disabled", "form", "maxlength", "name", "placeholder", "readonly", "required", "rows", "wrap"]},
+        "button" : {"syntax" : "<button>Button</button>", "attributes" : ["style", "autofocus", "disabled", "form", "formaction", "formenctype", "formmethod", "formnovalidate", "formtarget", "name", "type", "value"]},
+        "select" : {"syntax" : "<select><option></option></select>", "attributes" : ["style", "autofocus", "disabled", "form", "multiple", "name", "required", "size"]},
+        "optgroup" : {"syntax" : "<select><optgroup><option></option></optgroup></select>", "attributes" : [attributes.global, "disabled", "label"]},
+        "option" : {"syntax" : "<option></option>", "attributes" : [attributes.global, "disabled", "label", "selected", "value"]},
+        "label" : {"syntax" : "<label>Label</label>", "attributes" : [attributes.global, "for", "form"]},
+        "fieldset" : {"syntax" : "<label>Label</label>", "attributes" : [attributes.global, "disabled", "for", "form"]},
+        "legend" : {"syntax" : "<legend>Legend</legend>", "attributes" : [attributes.global]},
+        "datalist" : {"syntax" : "<datalist>Label</datalist>", "attributes" : [attributes.global]},
+        "output" : {"syntax" : "<output>Output</output>", "attributes" : [attributes.global, "for", "form", "name"]},
+        "fieldset" : {"syntax" : "<fieldset></fieldset>", "attributes" : [attributes.global, "disabled", "form", "name"]}
+        
+    },
+    
+    "frame_tag" : {
+        "iframe" : {"syntax" : "<iframe></iframe>", "attributes" : [attributes.global, "height", "name", "sandbox", "src", "srcdoc", "width"]}
+    },
+    
+    "image_tags" : {
+        "img" : {"syntax" : "<img>", "attributes" : [attributes.global, "alt", "crossorigin", "height", "ismap", "longdesc", "src", "usemap", "width"]},
+        "map" : {"syntax" : "<map>Clickable Image Map</map>", "attributes" : [attributes.global, "name"]},
+        "area" : {"syntax" : "<area>Area inside Image Map</area>", "attributes" : [attributes.global, "alt", "coords", "download", "href", "hreflang", "media", "nohref", "rel", "shape", "target", "type"]},
+        "canvas" : {"syntax" : "<canvas>/canvas>", "attributes" : [attributes.global, "height", "width"]},
+        "figcaption" : {"syntax" : "<figcaption>Defines a caption for a figure element</figcaption>", "attributes" : [attributes.global]},
+        "figure" : {"syntax" : "<figure>Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</figure>", "attributes" : [attributes.global]}
+        
+    },
+    
+    "audio_video_tags" : {
+        "audio" : {"syntax" : "<audio>Insert source tags in here</audio>", "attributes" : [attributes.global, "autoplay", "controls", "loop", "muted", "preload", "src"]},
+        "source" : {"syntax" : "<source>", "attributes" : [attributes.global, "media", "src", "type"]},
+        "track" : {"syntax" : "<track>", "attributes" : [attributes.global, "default", "kind", "label", "src", "srclang"]},
+        "video" : {"syntax" : "<video>Insert source tags in here</video>", "attributes" : [attributes.global, "autoplay", "controls", "height", "loop", "muted", "poster", "preload", "src", "width"]}
+        
+    },
+
+    
+   
+     "link_tags" : {
+        "a" : {"syntax" : "<a>Link Text</a>", "attributes" : [attributes.global, "download", "href", "hreflang", "media", "rel", "target", "type"]},
+        "link" : {"syntax" : "<link>", "attributes" : [attributes.global, "crossorigin", "href", "hreflang", "media", "rel", "sizes", "type"]},
+        "nav" : {"syntax" : "<nav>Navigation Links go there</nav>", "attributes" : [attributes.global]}
+        
+    },
+    
+    "list_tags" : {
+        "ul" : {"syntax" : "<ul> unordered list: li goes here</ul>", "attributes" : [attributes.global]},
+        "ol" : {"syntax" : "<ol> ordered list: li goes here</ul>", "attributes" : [attributes.global, "reversed", "start", "type"]},
+        "li" : {"syntax" : "<li>list term</li>", "attributes" : [attributes.global, "value"]},
+        "dl" : {"syntax" : "<dl>terms and descriptions goes here</dl>", "attributes" : [attributes.global]},
+        "dt" : {"syntax" : "<dt> description term/name</dt>", "attributes" : [attributes.global]},
+        "dd" : {"syntax" : "<dd> describe a description term</dd>", "attributes" : [attributes.global]},
+        "menu" : {"syntax" : "<menu>menu command list goes in here</menu>", "attributes" : [attributes.global, "label", "type"]},
+        "menuitem" : {"syntax" : "<menuitem>menu command item goes here</menuitem>", "attributes" : [attributes.global, "checked", "command", "default", "disabled", "icon", "label", "radiogroup", "type"]}
+    },
+
+     "table_tags" : {
+        "table" : {"syntax" : "<table>HTML Table</table>", "attributes" : ["sortable"]},
+        "caption" : {"syntax" : "<caption>Table Caption</caption>", "attributes" : [attributes.global]},
+        "th" : {"syntax" : "<th>Table Heading</th>", "attributes" : [attributes.global, "abbr", "colspan", "headers", "rowspan", "scope", "sorted"]},
+        "tr" : {"syntax" : "<tr>Table Row</tr>", "attributes" : [attributes.global]},
+        "td" : {"syntax" : "<td>Table Data</td>", "attributes" : [attributes.global, "colspan", "headers", "rowspan"]},
+        "thead" : {"syntax" : "<thead>Table heading group</thead>", "attributes" : [attributes.global]},
+        "tbody" : {"syntax" : "<tbody>Table body group</tbody>", "attributes" : [attributes.global]},
+        "tfoot" : {"syntax" : "<tfoot>Table footer group</tfoot>", "attributes" : [attributes.global]},
+        "col" : {"syntax" : "<col>Specifies column properties for each column within a colgroup element</col>", "attributes" : [attributes.global]},
+        "colgroup" : {"syntax" : "<colgroup>Specifies a group of one or more columns in a table for formatting</colgroup>", "attributes" : [attributes.global, "span"]}
+    },
+
+    
+    "style_and_semantics_tags" : {
+        "style" : {"syntax" : "<style>Style information for an HTML document</style>", "attributes" : [attributes.global, "media", "scoped", "type"]},
+        "body" : {"syntax" : "<body>Body Content</body>", "attributes" : [attributes.global]},
+        "html" : {"syntax" : "<html>HTML Content</html>", "attributes" : [attributes.global, "xmlns"]},
+        "title" : {"syntax" : "<title>page title</title>", "attributes" : [attributes.global]},
+        "div" : {"syntax" : "<div>Div Content</div>", "attributes" : [attributes.global]},
+        "span" : {"syntax" : "<span>Span content</span>", "attributes" : [attributes.global]},
+        "header" : {"syntax" : "<header>Header content</header>", "attributes" : [attributes.global]},
+        "footer" : {"syntax" : "<footer>Footer content</footer>", "attributes" : [attributes.global]},
+        "main" : {"syntax" : "<main>Specifies the main content of a document</main>", "attributes" : [attributes.global]},
+        "section" : {"syntax" : "<section>Defines sections in a document</section>", "attributes" : [attributes.global]},
+        "article" : {"syntax" : "<article>Specifies independent, self-contained content.</article>", "attributes" : [attributes.global]},
+        "aside" : {"syntax" : "<aside>Defines content aside from the content it is placed in</aside>", "attributes" : [attributes.global]},
+        "details" : {"syntax" : "<details>Additional details that the user can view or hide</details>", "attributes" : [attributes.global, "open"]},
+        "dialog" : {"syntax" : "<dialog>Defines dialog box or window</dialog>", "attributes" : [attributes.global, "open"]},
+        "summary" : {"syntax" : "<summary>Defines a visible heading for the details element</summary>", "attributes" : [attributes.global]},
+        "picture" : {"syntax" : "<picture> the picture tag gives web developers more flexibility in specifying image resources.</picture>", "attributes" : [attributes.global]}
+        
+    },
+    
+    
+    "meta_info_tags" : {
+        "head" : {"syntax" : "<head>Container for all the head elements</head>", "attributes" : [attributes.global, "height", "name", "sandbox", "src", "srcdoc", "width"]},
+        "meta" : {"syntax" : "<meta>", "attributes" : [attributes.global, "charset", "content", "http-equiv", "name"]},
+        "base" : {"syntax" : "<base>", "attributes" : [attributes.global, "href", "target"]}
+    },
+    
+    "programming_tags" : {
+        "script" : {"syntax" : "<script>Client-side script</script>", "attributes" : [attributes.global, "async", "charset", "defer", "src", "type"]},
+        "noscript" : {"syntax" : "<noscript>Defines alternate content for users that have disabled scripts in their browser or have a browser that doesn't support script</noscript>", "attributes" : [attributes.global]},
+        "embed" : {"syntax" : "<embed>", "attributes" : [attributes.global, "height", "src", "type", "width"]},
+        "object" : {"syntax" : "<object>Defines an embedded object within an HTML document</object>", "attributes" : [attributes.global, "form", "height", "type", "usemap", "width"]},
+        "param" : {"syntax" : "<param>", "usage" : "tag is used to define parameters for plugins embedded with an <object> element.", "attributes" : [attributes.global, "name", "value"]}
+        
+    }
+
+};
